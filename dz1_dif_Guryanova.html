@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        // Получается "2010", потому что 10 + 10 = 20 (число), последняя "10" -- строка
+        console.log (10 + 10 + "10");
+        // Получается "101010", потому что по центру "10" -- строка
+        console.log (10 + "10" + 10);
+        // Получается 30, потому что последняя "10" преобразована в число с помощью +
+        console.log (10 + 10 + +"10");
+        // Получается -Infinity, потому что бесконечность появляется при делении на 0, а отрицательная она из-за минуса 
+        console.log (10 / -"");
+        // Поулучается NaN, потому что мы число делим на строку, а строка - не число.
+        console.log (10 / +"2,5");
+    </script>
+</body>
+</html>
